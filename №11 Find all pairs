@@ -1,0 +1,7 @@
+class Solution {
+  static int duplicates(int[] a) {
+    int p = 0, f[] = new int[1001];
+    for (int x : a) p += f[x]++ % 2;
+    return p;
+  }
+}
